@@ -27,7 +27,7 @@ def parse_args(argv=None):
     parser.add_argument('--min-s2n', default=None, type=float,
                         help='Select points having at least the given number of detections')
     parser.add_argument('--min-nobs', type=int, default=0,
-                        help='Select light curves having at least min_nobs observations. Applies after all the filterting')
+                        help='Select light curves having at least min_nobs observations. Applies after all other filters')
 
     return parser.parse_args(argv)
 
